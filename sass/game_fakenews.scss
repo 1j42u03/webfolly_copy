@@ -1,0 +1,9 @@
+@import "./base/color.scss";
+@import "./base/font.scss";
+
+span {
+    // 可以使用引用的變數檔
+    color: $red;
+    font-size: 20px;
+
+}

@@ -1,0 +1,94 @@
+@import "layout/backheader";
+@import "layout/backfooter";
+@import "layout/backaside";
+@import "./base/color";
+@import "./component/table";
+@import"./component/btn";
+
+.container {
+  display: flex;
+
+  main {
+    margin: 46px 87px;
+
+    .title {
+      // max-width: 1028px;
+      height: 55px;
+      background-color: $black;
+      color: $white;
+      display: flex;
+      border-radius: 32px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: flex;
+      margin-bottom: 30px;
+
+      .btn {
+        @extend .btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 44px;
+        margin-right: 8px;
+        color: $white;
+
+        &:hover {
+          color: $black;
+
+        }
+
+      }
+    }
+
+
+  }
+
+
+}
+
+// ===刪除彈窗===
+.popupWarning {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+
+
+  ul {
+    background-color: $white;
+    padding: 162px 304px;
+
+
+    li {
+      list-style-type: none;
+      text-align: center;
+      margin: 30px;
+
+      .button {
+        display: flex;
+
+        .btn {
+          @extend .btn;
+          align-items: center;
+          justify-content: center;
+          width: 160px;
+          height: 44px;
+          margin: 0 50px;
+          color: $white;
+
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+//  ===分類彈窗===

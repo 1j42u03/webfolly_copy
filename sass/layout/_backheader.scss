@@ -1,0 +1,21 @@
+header {
+  background-color: #F5DE75;
+  height: 80px;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 40%;
+    right: 34px;
+
+    a {
+      color: black;
+      padding: 20px;
+    }
+
+    a.signout {
+      margin-left: 12px;
+    }
+  }
+
+}
